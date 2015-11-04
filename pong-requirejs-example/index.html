@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Kickstart</title>
+        <script data-main="js/pong" src="js/require.js"></script>
+        <style type="text/css">
+            * { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 16px; }
+            #ScoreBoard { position: relative; width: 1004px; margin: 0 auto 10px auto; padding: 5px 10px; background: #434445; border-radius: 5px; }
+            #ScoreBoard span { font-weight: bold; color: #FFF; }
+            #PlayerTwoScore { position: absolute; right: 10px; top: 5px; }
+            canvas { display: block; margin: 0 auto; border: 1px solid #000; }
+        </style>
+    </head>
+    <body>
+        <div id="ScoreBoard">
+            <div id="PlayerOneScore">
+                <span id="XPos1"></span>&nbsp;<span id="YPos1"></span>
+            </div>
+            <div id="PlayerTwoScore">
+                <span id="XPos2"></span>&nbsp;<span id="YPos2"></span>
+            </div>
+        </div>
+        <!-- END :: ScoreBoard -->
+
+        <canvas id="world" width="1024" height="640">
+            Dein Browser ist ne Null.
+        </canvas>
+        <!-- END :: Playfield -->
+
+    </body>
+</html>

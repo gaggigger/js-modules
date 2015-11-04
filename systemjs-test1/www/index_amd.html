@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+</head>
+<body>
+<h1>Startpage</h1>
+
+<div class="content">
+
+    <div class="teaser">Waiting for init...</div>
+
+</div>
+
+
+<ul>
+    <li><a href="index_amd.html">index</a></li>
+    <li><a href="cart_amd.html">cart</a></li>
+    <li><a href="product_amd.html">product</a></li>
+</ul>
+
+
+<!--<script src="js/lib/require.js"></script>-->
+<script type="text/javascript" src="js/lib/system.js"></script>
+<script type="text/javascript">
+
+//    System.config({
+//        baseUrl: '/js/',
+//        paths: {
+////            '*':'*.js',
+////            pages: '../pages',
+////            common: 'common.js',
+////            lib: '../lib',
+////            plugins: '../plugins',
+////            jquery: '../lib/jquery'
+//        },
+//        shim: {
+//            //'plugins/jquery.plugin1': ['jquery'],
+//            'plugins/jquery.swiper': ['jquery']
+//        },
+//        skipDataMain: true, // DOM suche nach einem script mit data-main attr kann so übersprungen werden
+//
+//    });
+//
+//    System.baseUrl = '/js/lib/';
+//    System.import('common');
+
+
+
+//    window.define = System.amdDefine;
+//    window.require = window.requirejs = System.amdRequire;
+//    require(['./js/common.js'], function (common) {
+//        require(['pages/index']);
+//    });
+
+    // ODER
+    System.import('js/common.js').then(function (common) {
+        System.import('pages/index');
+    });
+</script>
+
+</body>
+</html>
+

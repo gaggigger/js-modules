@@ -1,0 +1,65 @@
+<link rel="stylesheet" type="text/css" href="css/jTinder.css">
+
+<!-- start padding container -->
+<div class="wrap">
+    <!-- start jtinder container -->
+    <div id="tinderslide">
+        <ul>
+            <li data-productId="456">
+                <img class="img" src="img/pane/1.jpg"/>
+                <div class="name">Product 1</div>
+                <div class="price">16,50€</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li data-productId="11135">
+                <img class="img" src="img/pane/2.jpg"/>
+                <div class="name">Product 2</div>
+                <div class="price">99,99€</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li data-productId="656">
+                <img class="img" src="img/pane/3.jpg"/>
+                <div class="name">Product 3</div>
+                <div class="price">16584,86€</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li data-productId="778" data-discount_percent="50%">
+                <img class="img" src="img/pane/4.jpg"/>
+                <div class="name">Product 4</div>
+                <div class="price">0,85€</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+        </ul>
+    </div>
+    <!-- end jtinder container -->
+</div>
+<!-- end padding container -->
+
+<div class="actions">
+    <a href="#" class="dislike"><i></i></a>
+    <a href="#" class="like"><i></i></a>
+</div>
+
+<div class="overlay">
+    <div class="content">
+        <p class="discount"></p>
+        <img src="http://img-cdn.shopgate.com/10073/1/a0cfaa00010ad24923b020c75909873b8fbdf8b71c56562c0b165a759327a551?w=640&h=640&zc=resize&fillc=FFFFFF" alt=""/>
+        <a class="buy btn" href="#">Kaufen</a>
+        <a class="close btn" href="#">Schließen</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/vendor/jquery.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.transform2d.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.jTinder.js"></script>
+<script type="text/javascript" src="js/sgTinder.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $('#tinderslide').sgTinder();
+    });
+</script>

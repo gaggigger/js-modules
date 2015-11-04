@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+</head>
+<body>
+<h1>Startpage</h1>
+
+<div class="content">
+
+    <div class="teaser">Waiting for init...</div>
+
+</div>
+
+
+<ul>
+    <li><a href="index_es6.html">index</a></li>
+    <li><a href="cart_es6.html">cart</a></li>
+    <li><a href="product_es6.html">product</a></li>
+</ul>
+
+
+<script type="text/javascript" src="js/lib/system.js"></script>
+<script type="text/javascript">
+
+    System.import('js/common.js').then(function (common) {
+        System.import('pages_es6/index');
+    });
+</script>
+
+</body>
+</html>
+

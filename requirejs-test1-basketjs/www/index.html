@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+</head>
+<body>
+<h1>Startpage</h1>
+
+<div class="content">
+
+    <div class="teaser">Waiting for init...</div>
+
+</div>
+
+
+<ul>
+    <li><a href="index.html">index</a></li>
+    <li><a href="cart.html">cart</a></li>
+    <li><a href="product.html">product</a></li>
+</ul>
+
+
+<!--<script src="js/lib/require.js"></script>-->
+<script type="text/javascript" src="js/lib/basket.full.min.js"></script>
+<script type="text/javascript">
+    basket.require({ url: 'js/lib/require.js', unique:1 })
+    .then(function(){
+        //NOTICE: the key is with _ (underscore) because basket.js don't want clear it from localStorage when basket.clear()
+        basket.require({ url: 'js/lib/basket-loader.js', key: 'basket_loader', unique:1 })
+        .then(function(){
+//         basket.require({ url: 'js/common.js',unique:1 })
+                    console.log(1);
+            require(['./js/common'], function (common) {
+                console.log(3);
+                require(['pages/index']);
+            });
+        })
+    })
+</script>
+
+</body>
+</html>
+

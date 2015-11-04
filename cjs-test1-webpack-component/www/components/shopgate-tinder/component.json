@@ -1,0 +1,40 @@
+{
+  "name": "shopgate-tinder",
+  "version": "0.1.0",
+  "description": "Tinder for products",
+  "repository": {
+    "type": "git",
+    "url": "https://stash.localdev.cc/scm/sgxs/widget-prototype-tinder.git"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+
+  "license": "MIT",
+  "private": false,
+  "scripts": ["js/vendor/jquery.js", "js/vendor/jquery.transform2d.js", "js/vendor/jquery.jTinder.js", "js/sgTinder.js"],
+  "styles": ["css/jTinder.css"],
+  "fonts": [],
+  "templates": ["sgTinder.html"],
+  "main": ["js/sgTinder.js"],
+  "shopgate": {
+    "publicWidgetConfig": {
+      "showPrice": {
+        "default": true,
+        "values": [true, false]
+      },
+      "showButtons": {
+        "default": false,
+        "values": [true, false]
+      },
+      "showDiscountOverlay": {
+        "default": true,
+        "values": [true, false]
+      }
+    }
+  }
+
+}
+
+
+

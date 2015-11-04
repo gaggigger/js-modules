@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+
+</head>
+<body>
+<h1>Cart</h1>
+
+<h2>Items</h2>
+
+<div class="cart-items"></div>
+<p>Gesamtsumme: <span class="total"></span></p>
+
+<br/>
+
+
+<ul>
+    <li><a href="index.html">index</a></li>
+    <li><a href="cart.html">cart</a></li>
+    <li><a href="product.html">product</a></li>
+</ul>
+
+
+<script src="js/lib/require.js"></script>
+<script>
+
+//    System.import('/js/common').then(function() {
+//        System.import('pages/cart').then(function() {
+//
+//        });
+//    });
+
+    require(['./js/common'], function () {
+        require(['pages/cart']);
+    });
+</script>
+
+</body>
+</html>

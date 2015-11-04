@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+<h1>Cart</h1>
+
+<h2>Items</h2>
+
+<div class="cart-items"></div>
+<p>Gesamtsumme: <span class="total"></span></p>
+
+<br/>
+
+<ul>
+    <li><a href="index_cjs.html">index</a></li>
+    <li><a href="cart_cjs.html">cart</a></li>
+    <li><a href="product_cjs.html">product</a></li>
+</ul>
+
+<script type="text/javascript" src="js/lib/system.js"></script>
+<script type="text/javascript">
+    System.import('js/common.js').then(function (common) {
+        System.import('pages_cjs/cart');
+    });
+</script>
+
+</body>
+</html>

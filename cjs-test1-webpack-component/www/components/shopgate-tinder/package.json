@@ -1,0 +1,25 @@
+{
+  "name": "shopgate-tinder",
+  "version": "0.1.0",
+  "description": "Tinder for products",
+  "author": "Carsten Schneider <carsten.schneider@shopgate.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://stash.localdev.cc/scm/sgxs/widget-prototype-tinder.git"
+  },
+  "bugs": {
+    "mail": "support@shopgate.com",
+    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+  },
+  "dependencies": {
+    "other-plugin": "https://github.com/shopgate/other-plugin/master",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "vulcanize": "^1.10.2"
+  },
+  "license": "MIT",
+  "shopgate": {
+    "custom": "properties here"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+</head>
+<body>
+<h1>Startpage</h1>
+
+<div class="content">
+
+    <div class="teaser">Waiting for init...</div>
+
+</div>
+
+
+<ul>
+    <li><a href="index.html">index</a></li>
+    <li><a href="cart.html">cart</a></li>
+    <li><a href="product.html">product</a></li>
+</ul>
+
+
+<!--<script src="js/lib/require.js"></script>-->
+<script src="js/lib/alameda.js"></script>
+<!--<script src="../../xrayquire.js"></script>-->
+<script>
+    require(['./js/common'], function (common) {
+        require(['pages/index']);
+    });
+    /*
+     Anmerkungen zu dieser Lösung:
+     - es müssen 3 Datei request gemacht werden.
+     - common und index können nicht parallel geladen werden. d.h alle 3 requests werden nacheinander ausgeführt
+
+     Lösungsvorschläge:
+     - require js zu common.js hinzufügen
+     - normales (paralleles laden über script tags)
+
+     */
+</script>
+
+    <!-- so könnte es nach anwendung der Lösungsvorschläge in production aussehen -->
+    <!--<script src="js/common.js"></script> &lt;!&ndash; enthält requirejs lib + common.js &ndash;&gt;-->
+    <!--<script src="js/pages/index.js"></script>-->
+    <!--//    require(['../common'], function (common) {-->
+    <!--//        require(['pages/index']);-->
+    <!--//    });-->
+
+    <!--// ODER-->
+    <!--// pages/index muss common.js requiren. und config.path common:"../common"-->
+    <!--// define('common',.. muss dann evtl auch noch engepasst werden-->
+    <!--require(['pages/index'], function (a) {-->
+
+    <!--});-->
+    <!--</script>-->
+
+</body>
+</html>
+

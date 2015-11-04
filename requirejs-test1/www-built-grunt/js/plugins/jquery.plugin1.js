@@ -1,0 +1,1 @@
+$.fn.plugin1=function(){};

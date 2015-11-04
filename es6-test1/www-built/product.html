@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <script src="js/lib/require.js"></script>
+    <!--<script src="../../xrayquire.js"></script>-->
+    <script>
+        //Load common code that includes config, then load the app
+        //logic for this page. Do the require calls here instead of
+        //a separate file so after a build there are only 2 HTTP
+        //requests instead of three.
+        require(['./js/common'], function (common) {
+            //js/common sets the baseUrl to be js/ so
+            //can just ask for 'app/main1' here instead
+            //of 'js/app/main1'
+            require(['pages/product']);
+        });
+    </script>
+</head>
+<body>
+<h1>Product</h1>
+
+<a href="#" class="add-to-cart">Add to Cart</a>
+
+<br/><br/><br/>
+
+
+<ul>
+    <li><a href="index.html">index</a></li>
+    <li><a href="cart.html">cart</a></li>
+    <li><a href="product.html">product</a></li>
+</ul>
+
+</body>
+</html>

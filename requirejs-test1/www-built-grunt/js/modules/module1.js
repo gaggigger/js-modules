@@ -1,0 +1,1 @@
+define(["require","jquery","helper"],function(e){var n=e("jquery");e("helper"),n.fn.module1=function(){console.log("$.fn.module1")},window.subModule3="a";var u=e(["module3a"]);return u(),function(){}});

@@ -1,0 +1,9 @@
+{
+  "name": "component-webpack-example",
+  "repo": "webpack/webpack",
+  "version": "0.0.1",
+  "dependencies": {
+    "shopgate-tinder": "*"
+  },
+  "license": "MIT"
+}
